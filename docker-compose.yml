@@ -1,0 +1,12 @@
+version: "3"
+services:
+  frontend:
+    image: zinujust/test-frontend
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+  backend:
+    image: zinujust/test-backend
+    ports:
+      - "3000:3000"

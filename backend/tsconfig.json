@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    // Control what method is used to detect module-format JS files.
+    "target": "ESNext",
+    // Specify what module code is generated.
+    "module": "ESNext",
+    // Specify how TypeScript looks up a file from a given module specifier.
+    "moduleResolution": "bundler",
+    // Specify the root folder within your source files.
+    "rootDir": "./src",
+    // Specify an output folder for all emitted files.
+    "outDir": "./dist",
+    // Enable importing .json files.
+    "resolveJsonModule": true,
+    // Emit
+    // Create source map files for emitted JavaScript files.
+    "sourceMap": true,
+    // Interop Constraints
+    // Ensure that each file can be safely transpiled without relying on other imports.
+    "isolatedModules": true,
+    // Do not transform or elide any imports or exports not marked as type-only, ensuring they are written in the output file's format based on the 'module' setting.
+    // "verbatimModuleSyntax": true,
+    // Emit additional JavaScript to ease support for importing CommonJS modules. This enables 'allowSyntheticDefaultImports' for type compatibility.
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "typeRoots": ["./node_modules/@types"],
+    "types": ["express", "node", "cors"],
+    // Type Checking
+    // Enable all strict type-checking options.
+    "strict": true,
+    // Skip type checking all .d.ts files.
+    "skipLibCheck": true
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules"]
+}
